@@ -43,7 +43,7 @@ projectbox.addEventListener("mouseenter", function() {
 }
 
 const sourceimage='./assets/email.png'
-mainfunction(sourceimage,"Email","Email","https://github.com")
+// mainfunction(sourceimage,"Email","Email","https://github.com")
 
 
 
