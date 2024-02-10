@@ -1,5 +1,5 @@
 // Description: Fetches data from the API
-const mainfunction = async (image,proname,prodesc,prolink) => {
+const mainfunction = async (image,proname,prodesc,prolink,githublinks) => {
 const projectall= document.getElementById("projects-all");
 
 
@@ -24,26 +24,30 @@ const btn1 = document.createElement("button");
 btn1.classList.add("btn", "btn-color-2", "project-btn");
 btn1.innerHTML = "Github";
 btn1.onclick = function() {
-    location.href = "https://github.com";
+    location.href =githublinks;
 }
 btncontainer.appendChild(btn1);
 const btn2 = document.createElement("button");
 btn2.classList.add("btn", "btn-color-2", "project-btn");
 btn2.innerHTML = "Live Demo";
 btn2.onclick = function() {
-    location.href = "https://github.com";
+    location.href = prolink;
 }
 btncontainer.appendChild(btn2);
 projectall.appendChild(projectbox);
 
-projectbox.addEventListener("mouseenter", function() {
-   // projectbox.classList.add("active");
-    projectall.style.background = "linear-gradient(90deg, #000000 0%, #000000 100%)";
-})
+// projectbox.addEventListener("mouseenter", function() {
+//    projectbox.classList.add("active");
+//     projectall.style.background = "linear-gradient(90deg, #000000 0%, #000000 100%)";
+// })
 }
 
-const sourceimage='./assets/email.png'
-// mainfunction(sourceimage,"Email","Email","https://github.com")
+const sourceimage='./assets/magandaprev.png'
+const prevlink='https://maganda-sakub.onrender.com/'
+const githublink='https://github.com/rohitsaini81/maganda-shakun'
+// mainfunction(image,proname,prodesc,prolink)
+
+mainfunction(sourceimage,"Portfolio","Maganda-Shakub from uganda",prevlink,githublink)
 
 
 
