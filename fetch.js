@@ -16,7 +16,7 @@ divarticle.appendChild(img);
 const h2 = document.createElement("h2");
 h2.classList.add("experience-sub-title", "project-title");
 projectbox.appendChild(h2);
-h2.innerHTML = "Project Two - " + proname;
+h2.innerHTML = proname;
 const btncontainer = document.createElement("div");
 btncontainer.classList.add("btn-container");
 projectbox.appendChild(btncontainer);
