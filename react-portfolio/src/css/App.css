@@ -12,6 +12,10 @@ body{
 }
 a{
     color: azure;
+    text-decoration: none !important;
+}
+a:hover{
+    color: #6d6da8;
 }
 img{
     width: 100%;
