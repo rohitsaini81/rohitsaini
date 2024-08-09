@@ -6,7 +6,7 @@ export default function NavBar() {
     <nav>
       <ul className='Flex'>
         <div className="Flex" style={{width:"33.3vw",justifyContent:'right'}}>
-          <li style={{margin:"0 0 0 20px"}}><a href="http://"  >Rohit Saini</a></li>
+          <li style={{margin:"0 0 0 20px"}}><Link to={"/"}  >Rohit Saini</Link></li>
         </div>
         <div className="Flex" style={{width:"33.3vw",justifyContent:'center'}}>
           <li className='mlr-8px'><Link to={"/"}>Home</Link></li>
